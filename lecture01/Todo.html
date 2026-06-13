@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <h1> TODO LIST</h1>
+        <div>
+            <div id ="todo1"
+            <h2>1.todo 1</h2>
+            <button onclick = deletetodo(1)">delete</button>
+            </div>
+            <div id ="todo2"
+        <h2>2.todo 2</h2>
+        <button onclick="deleteTodo(2)">delete</button>
+    </div>
+    <div id ="todo3"
+            <h3>3.todo 3</h3>
+            <button onclick="deleteTodo(3)">delete</button> 
+        </div>
+    </div>
+    <div>
+        <input text="text"></input>
+        <button onclick="addtodo()">Add Todo!</button>
+    </div>
+    </body>
+
+    <script>
+        function addTodo() {
+            const inputElement= document.querySelector("input");
+            const value = inputEl.value;
+
+            const newDivEl = document.createElement("div");
+            newDivEl.innerHTML = value;
+
+            document.querySelector("body").appendChild(newDivEl)
+        }
+        function deleteTodo(index) {
+            const inputElement = document.getElementbyId("todo-" + index);
+            element.parentNode.RemoveChild(element);
+        }
+    </script>
+
+</html>

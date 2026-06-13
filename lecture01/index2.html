@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Todo list</h1>
+  <div>
+    <div id="todo-1" style="display: flex;"> <!--style="display: flex;":This is used to put the delete button side by side.--> 
+      <h4>1. Take class</h4>  
+      <button onclick="deleteTodo(1)">delete</button> 
+    </div>
+    <div id="todo-2">
+      <h4>2. Go out to eat</h4>
+      <button onclick="deleteTodo(2)">delete</button>
+    </div>
+  </div>
+  <div>
+    <input type="text"></input>
+    <button>Add Todo</button>
+  </div>
+</body>
+
+<script>
+  function deleteTodo(index) {
+    const element = document.getElementById("todo-" + index);
+    element.parentNode.removeChild(element);
+  }
+</script>
+
+</html>
+<!--Whenever you click on the delete button you are calling the deleteTodo {here (index) represents the 1,2,3 values}fuction -->
